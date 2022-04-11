@@ -8,7 +8,6 @@ Write-Host $Path -ForegroundColor Green
 Set-location $Path
 Get-ChildItem -Recurse | Unblock-File
 . .\Misc\PS-Forms.ps1
-Import-Module (Get-ChildItem -Recurse -Filter "*.psd1").FullName
 Clear-Host
 
 
@@ -41,7 +40,7 @@ $inputs = @{
 
 $inputs = Get-FormItemProperties -item $inputs -dialogTitle "Fill these required fields"
 
-Connect-PnPOnline -UseWebLogin -Url $inputs.Site_URL -WarningAction Ignore
+Connect-PnPOnline -UseWebLogin -Url $inputs.Site_URL -WarningAction Ignore  
 
 try {
     # This does not work for some reason. bug in the PnP Library?

@@ -4,7 +4,7 @@ SPO Documents Report is a script that generates a CSV file that lists all files 
 
 ## Limitations
 - The report does not include subsites.
-- The report can only targe tone site at a time.
+- The report can only targe one site at a time.
 
 ## Prepare workstation
 Before you begin, make sure you are running this script on a modern machine with Windows 10 or later. This script is not tested against older operating systems.
@@ -16,6 +16,11 @@ Before you begin, make sure you are running this script on a modern machine with
 
 ```
 Set-ExecutionPolicy -Scope CurrentUser Unrestricted
+```
+
+Install Pnp.PowerShell:
+```
+Install-module Pnp.PowerShell -Scope CurrentUser
 ```
 
 - Download the [latest release](https://github.com/Zerg00s/spo-documents-report/releases).
