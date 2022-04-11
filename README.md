@@ -28,7 +28,9 @@ Set-ExecutionPolicy -Scope CurrentUser Unrestricted
 ![](IMG/Example.png)
 - Click OK.
 - Login to the SharePoint Online Site
-- After the script is done, a CSV file will be created in the script folder.
+- After the script is done, a CSV file will be created in the script folder:
+
+![](IMG/Sample.png)
 
 
 ## Can I run the script multiple times?
