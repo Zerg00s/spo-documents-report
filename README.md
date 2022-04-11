@@ -9,8 +9,6 @@ SPO Documents Report is a script that generates a CSV file that lists all files 
 ## Prepare workstation
 Before you begin, make sure you are running this script on a modern machine with Windows 10 or later. This script is not tested against older operating systems.
 
-Additionally, verify that the target SharePoint site  already exists. 
-
 - Launch a new PowerShell window:
 ![](IMG/PowerShell.png)
 
@@ -20,6 +18,7 @@ Additionally, verify that the target SharePoint site  already exists.
 Set-ExecutionPolicy -Scope CurrentUser Unrestricted
 ```
 
+- Download the [latest release](https://github.com/Zerg00s/spo-documents-report/releases).
 - Unzip the folder and confirm the contents.
 - Run `Gen-DocumentsReport.bat` file by double-clicking it:
 
