@@ -52,11 +52,8 @@ try {
     $lists = Get-PnPList -Includes Title, BaseTemplate, Hidden
     $libraries = $lists | Where-Object { $_.BaseTemplate -eq 101 -and $_.Hidden -eq $false }
 
-
     $documents = @()
     foreach ($library in $libraries) {
-        $library = $libraries[0]
-        $documents = @()
         
         $files = Get-PnPListItem -List $library -PageSize 200  -Fields Title, Id, FileRef, FileLeafRef, File_x0020_Size, LinkFilenameNoMenu, GUID
 
