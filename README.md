@@ -29,7 +29,7 @@ Install-module Pnp.PowerShell -Scope CurrentUser
 
 ![](IMG/Files.png)
 
-- Provide a SharePoint site URL that will contain email archive:
+- Provide a SharePoint site URL that will be scanned
 ![](IMG/Example.png)
 - Click OK.
 - Login to the SharePoint Online Site
